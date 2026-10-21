@@ -1,0 +1,161 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where([data-theme='dark'], [data-theme='dark'] *));
+
+/* ── Design tokens ─────────────────────────────────────────────── */
+:root {
+  --paper: 247 246 242;
+  --surface: 255 255 255;
+  --ink: 17 17 16;
+  --muted: 102 101 96;
+  --faint: 156 155 148;
+  --line: 226 224 216;
+  --accent: 226 80 38;
+  --dot: 17 17 16;
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --paper: 13 13 12;
+  --surface: 21 21 20;
+  --ink: 236 235 230;
+  --muted: 160 159 152;
+  --faint: 98 97 92;
+  --line: 40 40 37;
+  --accent: 255 112 66;
+  --dot: 236 235 230;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-mono), ui-monospace, 'SF Mono', monospace;
+  --font-mono: var(--font-geist-mono), ui-monospace, 'SF Mono', monospace;
+  --font-serif: var(--font-instrument-serif), Georgia, 'Times New Roman', serif;
+
+  --color-paper: rgb(var(--paper));
+  --color-surface: rgb(var(--surface));
+  --color-ink: rgb(var(--ink));
+  --color-muted: rgb(var(--muted));
+  --color-faint: rgb(var(--faint));
+  --color-line: rgb(var(--line));
+  --color-accent: rgb(var(--accent));
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Base ──────────────────────────────────────────────────────── */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background: rgb(var(--paper));
+  color: rgb(var(--ink));
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: rgb(var(--ink));
+  color: rgb(var(--paper));
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+:focus-visible {
+  outline: 2px solid rgb(var(--accent));
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── Halftone texture ──────────────────────────────────────────── */
+.halftone {
+  background-image: radial-gradient(rgb(var(--dot)) 0.9px, transparent 1.1px);
+  background-size: 7px 7px;
+}
+
+.mask-tr {
+  mask-image: radial-gradient(ellipse at top right, #000 0%, transparent 70%);
+}
+
+.mask-bl {
+  mask-image: radial-gradient(ellipse at bottom left, #000 0%, transparent 70%);
+}
+
+/* Portrait: duotone print look that resolves to full colour on hover */
+.portrait img {
+  filter: grayscale(1) contrast(1.08) brightness(1.02);
+  transition: filter 0.7s var(--ease-out-expo), transform 0.9s var(--ease-out-expo);
+}
+
+.portrait::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgb(var(--paper) / 0.55) 0.8px, transparent 1.2px);
+  background-size: 4px 4px;
+  transition: opacity 0.7s var(--ease-out-expo);
+}
+
+.portrait:hover img {
+  filter: grayscale(0) contrast(1) brightness(1);
+  transform: scale(1.02);
+}
+
+.portrait:hover::after {
+  opacity: 0;
+}
+
+/* Contribution graph: dots print in column by column, and swell on hover */
+.contrib circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.25s var(--ease-out-expo);
+}
+
+.contrib:not(.is-visible) circle {
+  opacity: 0;
+}
+
+.contrib.is-visible circle {
+  animation: dot-in 0.7s var(--ease-out-expo) backwards;
+}
+
+.contrib circle:hover {
+  transform: scale(1.5);
+}
+
+@keyframes dot-in {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/* Element the guide cursor is currently pointing at */
+.guide-target {
+  outline: 1px dashed rgb(var(--accent));
+  outline-offset: 6px;
+  transition: outline-offset 0.4s var(--ease-out-expo);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Smith Degamo – Resume</title>
+    <meta name="author" content="Smith Degamo" />
+    <meta name="description" content="Resume of Smith Degamo, Web and Mobile Developer, BSIT student at Cordova Public College." />
+    <style>
+      /* Single-column, text-only layout (no tables, columns, icons or images) so ATS parsers read it in order. */
+      @page {
+        size: Letter;
+        margin: 0.45in 0.55in 0.45in;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: Garamond, 'EB Garamond', 'Times New Roman', serif;
+        font-size: 10pt;
+        line-height: 1.22;
+        color: #000;
+      }
+      h1 {
+        font-size: 18pt;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-align: center;
+      }
+      .contact {
+        margin-top: 3pt;
+        text-align: center;
+      }
+      .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h2 {
+        margin-top: 8pt;
+        padding-bottom: 1.5pt;
+        border-bottom: 0.75pt solid #000;
+        font-size: 10.5pt;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .entry {
+        margin-top: 4.5pt;
+        break-inside: avoid;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 12pt;
+      }
+      .org {
+        font-size: 10.5pt;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .org .kind {
+        font-weight: 400;
+        text-transform: none;
+      }
+      .role {
+        font-style: italic;
+      }
+      .when {
+        white-space: nowrap;
+      }
+      ul {
+        margin-top: 1.5pt;
+        padding-left: 13pt;
+      }
+      li {
+        margin-top: 1pt;
+      }
+      p.line {
+        margin-top: 3pt;
+      }
+      strong {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SMITH DEGAMO</h1>
+    <p class="contact">
+      Cordova, Cebu, Philippines | +63 954 227 7125 | <a href="mailto:smithdegamox2@gmail.com">smithdegamox2@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/smith-degamo-384a3b392/">linkedin.com/in/smith-degamo-384a3b392</a> |
+      <a href="https://github.com/Prncsmth">github.com/Prncsmth</a> | <a href="https://smithdegamo.vercel.app">smithdegamo.vercel.app</a>
+    </p>
+
+    <h2>Profile</h2>
+    <p class="line">
+      Fourth-year BSIT student and web and mobile developer seeking an internship to apply my skills, gain real-world
+      experience, and grow as a developer. Experienced in building web and mobile applications with React, Next.js, React Native,
+      Node.js, and PostgreSQL, including a geolocation-based emergency coordination system for my capstone.
+    </p>
+
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="row"><span class="org">Cordova Public College</span><span>Cordova, Cebu</span></div>
+      <div class="row"><span>Bachelor of Science in Information Technology (4th Year)</span><span class="when">Expected 2027</span></div>
+      <ul>
+        <li>Capstone: CORDOVA RISKQ, a geolocation-based emergency and assistance coordination system</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">Cordova National High School</span><span>Cordova, Cebu</span></div>
+      <div class="row"><span>Information and Communications Technology (ICT)</span><span class="when">2016 – 2020</span></div>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="entry">
+      <div class="row">
+        <span class="org">CORDOVA RISKQ <span class="kind">(Academic Capstone)</span></span><span class="when">Jul 2026 – Oct 2026</span>
+      </div>
+      <div class="row"><span class="role">Web and Mobile Developer</span><span>React Native, Expo, Next.js, Express, PostgreSQL</span></div>
+      <ul>
+        <li>
+          Co-developed a geolocation-based emergency and assistance coordination system for Cordova, Cebu: an Android app for citizens and
+          responders, a real-time REST API, an admin dashboard, and a public download website.
+        </li>
+        <li>
+          Built live GPS tracking and routing for responders, slide-to-resolve incidents, alarms, photo reports, and an SOS flow that
+          explains failed sends and offers emergency calls in the React Native (Expo) app.
+        </li>
+        <li>
+          Implemented email OTP sign-up and 6-digit password reset, barangay-scoped alerts, automatic escalation of unanswered incidents
+          after 2 minutes, Cloudinary uploads, push notifications, and rate limiting in the Express, Prisma, and PostgreSQL backend.
+        </li>
+        <li>
+          Built admin dashboard features in Next.js and Socket.IO (live incident map, responder assignment by barangay, real-time audit
+          log) and shipped the public download website solo; 221 commits across 4 repositories, top contributor to the API and dashboard.
+        </li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><span class="org">KRAMZ PaddleForge <span class="kind">(Court Booking Platform)</span></span><span class="when">Oct 2026</span></div>
+      <ul>
+        <li>
+          Built a court booking platform for an outdoor pickleball venue: customers book Left or Right court slots and pay by cash or
+          GCash, while the owner and staff confirm requests from a console that shares the same live schedule.
+        </li>
+        <li>Tech: Next.js, React, Tailwind CSS, Node.js, Express, PostgreSQL (Neon). Live: kramzzpickle.vercel.app</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><span class="org">Skolarly <span class="kind">(AI Study Companion, Team Project)</span></span><span class="when">2026</span></div>
+      <ul>
+        <li>
+          Contributed to the Next.js frontend and the Express and Prisma backend of an AI study app that explains lessons, generates
+          quizzes with adjustable difficulty, and provides an AI tutor using the Gemini API.
+        </li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="row"><span class="org">Enterprise Network Troubleshooting <span class="kind">(Cisco Packet Tracer)</span></span><span class="when">Oct 2026</span></div>
+      <ul>
+        <li>
+          Diagnosed and repaired configuration errors in a simulated enterprise network in Cisco Packet Tracer, configuring network
+          devices and access, and verified IP and DNS connectivity between hosts with ping.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="entry">
+      <div class="row"><span class="org">Freelance</span><span>Cebu, Philippines</span></div>
+      <div class="row"><span class="role">Web Developer</span><span class="when">2025 – Present</span></div>
+      <ul>
+        <li>Design and build responsive websites and web applications independently.</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="row"><span class="org">Student Web Projects, Cordova Public College</span><span>Cordova, Cebu</span></div>
+      <div class="row"><span class="role">Student Developer</span><span class="when">2023 – 2024</span></div>
+      <ul>
+        <li>
+          Built reusable React components with props and list rendering, a React e-commerce app using the DummyJSON API with search,
+          filters, and a cart, and a profile page designed in Figma.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Additional</h2>
+    <p class="line">
+      <strong>Technical Skills:</strong> JavaScript, TypeScript, PHP, SQL, HTML, CSS; React, Next.js, Tailwind CSS; React Native, Expo;
+      Node.js, Express.js, Laravel, REST APIs, Socket.IO; PostgreSQL, MySQL, Prisma; Git, GitHub, Vercel, Figma, Cloudinary
+    </p>
+    <p class="line">
+      <strong>Networking:</strong> Cisco Packet Tracer; network device configuration, IP addressing, DNS, connectivity troubleshooting
+    </p>
+    <p class="line"><strong>Certifications:</strong> Web Design, TESDA</p>
+    <p class="line"><strong>Languages:</strong> English, Filipino, Cebuano</p>
+  </body>
+</html>
