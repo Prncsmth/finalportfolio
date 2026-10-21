@@ -9,8 +9,8 @@ export const site = {
   school: 'Cordova Public College',
   program: 'BS Information Technology',
   year: '4th year',
-  // Vercel provides the production domain at build time, so links and share previews always point at the live site.
-  url: process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000',
+  // Canonical address used for metadata, share previews and structured data (localhost during local development).
+  url: process.env.VERCEL ? 'https://smithdegamo.vercel.app' : 'http://localhost:3000',
   // From the résumé. The old site also listed smithdegamo@ and smithdegamox@gmail.com.
   email: 'smithdegamox2@gmail.com',
   resume: '/Smith-Degamo-Resume.pdf',
