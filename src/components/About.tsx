@@ -68,7 +68,7 @@ export function About() {
             href={site.resume}
             target="_blank"
             rel="noreferrer"
-            className="group mt-6 inline-flex items-center gap-2 text-[13.5px] underline decoration-line underline-offset-[6px] transition-colors hover:decoration-ink"
+            className="group mt-4 inline-flex min-h-10 items-center gap-2 text-[13.5px] underline decoration-line underline-offset-[6px] transition-colors hover:decoration-ink"
           >
             Read my résumé (PDF)
             <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

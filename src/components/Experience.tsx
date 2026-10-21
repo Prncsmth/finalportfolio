@@ -50,7 +50,7 @@ function Entry({ item, first }: { item: ExperienceItem; first: boolean }) {
                         <span className="block text-[1.9rem] font-medium leading-none tracking-[-0.05em] text-ink">
                           <CountUp value={c.commits} />
                         </span>
-                        <span className="text-[10px] uppercase tracking-[0.12em] text-faint">{c.solo ? 'commits · solo' : 'commits'}</span>
+                        <span className="text-[11px] uppercase tracking-[0.1em] text-faint">{c.solo ? 'commits · solo' : 'commits'}</span>
                       </p>
                     </div>
                     <ul className="mt-4 space-y-1.5 text-[13px] leading-snug text-muted">
@@ -85,7 +85,7 @@ export function Experience() {
             href={site.resume}
             target="_blank"
             rel="noreferrer"
-            className="group inline-flex items-center gap-2 text-[13px] text-muted underline decoration-line underline-offset-[6px] transition-colors hover:text-ink hover:decoration-ink"
+            className="group inline-flex min-h-10 items-center gap-2 text-[13px] text-muted underline decoration-line underline-offset-[6px] transition-colors hover:text-ink hover:decoration-ink"
           >
             Full résumé (PDF)
             <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

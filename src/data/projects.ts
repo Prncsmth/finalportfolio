@@ -31,7 +31,8 @@ export const projects: Project[] = [
       'An Android app and web platform for emergency coordination in Cordova, Cebu. Citizens send an SOS with their location and report incidents, responders get live routes and are tracked in real time, and administrators run everything from a live-map dashboard.',
     note: 'Academic capstone project, not an officially adopted LGU system.',
     stack: ['TypeScript', 'React Native', 'Expo', 'Next.js', 'Express', 'PostgreSQL', 'Prisma', 'Socket.IO', 'Mapbox'],
-    live: { label: 'cordova-riskq-website.vercel.app', href: 'https://cordova-riskq-website.vercel.app' },
+    live: { label: 'cordovariskq.org', href: 'https://www.cordovariskq.org' },
+    moreLive: [{ label: 'Admin dashboard', href: 'https://admin.cordovariskq.org' }],
     source: [
       { label: 'Mobile app', href: 'https://github.com/Prncsmth/CordovaRiskQ-Frontend' },
       { label: 'Backend API', href: 'https://github.com/Prncsmth/CordovaRiskQ-Bacnkend' },

@@ -43,3 +43,6 @@ next-env.d.ts
 # personal files not used by the site (anything in public/ would be downloadable)
 /public/images/developer-resume-template.docx
 /public/images/work/smith.jpg
+
+.vercel
+.env*

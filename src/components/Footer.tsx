@@ -11,10 +11,10 @@ export function Footer() {
         </p>
 
         <div className="flex items-center gap-5">
-          <a href={site.socials.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="transition-colors hover:text-ink">
+          <a href={site.socials.github} target="_blank" rel="noreferrer" aria-label="GitHub" className="-m-2 p-2 transition-colors hover:text-ink">
             <GitHubIcon className="size-4" />
           </a>
-          <a href={site.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="transition-colors hover:text-ink">
+          <a href={site.socials.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn" className="-m-2 p-2 transition-colors hover:text-ink">
             <LinkedInIcon className="size-4" />
           </a>
           <span className="h-4 w-px bg-line" aria-hidden="true" />

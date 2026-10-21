@@ -22,7 +22,7 @@ export async function GitHubActivity() {
             href={site.socials.github}
             target="_blank"
             rel="noreferrer"
-            className="group inline-flex items-center gap-2 text-[13px] text-muted transition-colors hover:text-ink"
+            className="group inline-flex min-h-10 items-center gap-2 text-[13px] text-muted transition-colors hover:text-ink"
           >
             <GitHubIcon className="size-3.5" />@{site.github.user}
             <ArrowUpRight className="size-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

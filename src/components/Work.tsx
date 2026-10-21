@@ -64,7 +64,7 @@ function Preview({ project }: { project: Project }) {
 
 function LinkRow({ label, icon, links }: { label: string; icon: ReactNode; links: ProjectLink[] }) {
   return (
-    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[13px]">
+    <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[13px]">
       <span className="flex items-center gap-1.5 text-faint">
         {icon}
         {label}
@@ -75,7 +75,7 @@ function LinkRow({ label, icon, links }: { label: string; icon: ReactNode; links
           href={link.href}
           target="_blank"
           rel="noreferrer"
-          className="group inline-flex items-center gap-1 text-muted underline decoration-line underline-offset-4 transition-colors hover:text-ink hover:decoration-ink"
+          className="group inline-flex min-h-8 items-center gap-1 py-1 text-muted underline decoration-line underline-offset-4 transition-colors hover:text-ink hover:decoration-ink"
         >
           {link.label}
           <ArrowUpRight className="size-3 opacity-60 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
