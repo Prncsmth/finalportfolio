@@ -35,7 +35,7 @@ export function Sidebar() {
     >
       <motion.div aria-hidden="true" className="absolute -right-px top-0 h-full w-px origin-top bg-accent" style={{ scaleY: progress }} />
 
-      <a href="#top" className="group flex items-center gap-2.5">
+      <a href="#top" className="group flex items-center justify-center gap-2.5">
         <Image
           src="/images/avatar-128.webp"
           alt=""
