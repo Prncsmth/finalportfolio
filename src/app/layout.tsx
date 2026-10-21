@@ -18,7 +18,7 @@ const description =
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Web & Mobile Developer`,
+    default: site.name,
     template: `%s | ${site.name}`,
   },
   description,
@@ -31,13 +31,13 @@ export const metadata: Metadata = {
     type: 'website',
     url: '/',
     siteName: site.name,
-    title: `${site.name} | Web & Mobile Developer`,
+    title: site.name,
     description,
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${site.name} | Web & Mobile Developer`,
+    title: site.name,
     description,
   },
 }
