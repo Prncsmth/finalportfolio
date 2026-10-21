@@ -87,16 +87,16 @@ export function Hero() {
           </motion.div>
         </div>
 
-        {/* On tablet and up the photo stretches to exactly the height of the intro text beside it. */}
+        {/* Fixed 4:5 frame (the photo's own shape), so it is never cropped and keeps its size whatever the text length. */}
         <figure className="flex flex-col md:col-span-5">
-          <div className="relative mx-auto aspect-4/5 w-full max-w-sm md:aspect-auto md:min-h-0 md:max-w-none md:flex-1">
+          <div className="relative mx-auto aspect-4/5 w-full max-w-sm md:mr-0 md:max-w-108">
             <div className="absolute inset-0">
               <Portrait />
             </div>
           </div>
           <motion.figcaption
             {...rise(1)}
-            className="mx-auto mt-3 flex w-full max-w-sm justify-between text-[11px] uppercase tracking-[0.1em] text-faint md:max-w-none"
+            className="mx-auto mt-3 flex w-full max-w-sm justify-between md:mr-0 md:max-w-108 text-[11px] uppercase tracking-[0.1em] text-faint"
           >
             <span>Fig. 01</span>
             <span>Cebu, PH</span>

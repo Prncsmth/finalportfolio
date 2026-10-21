@@ -188,7 +188,7 @@ export function GuideCursor() {
       <div className={`absolute top-5 flex flex-col gap-1.5 ${flip ? 'right-3 items-end' : 'left-4 items-start'}`}>
         <span className={`flex items-center gap-2 ${flip ? 'flex-row-reverse' : ''}`}>
           <span className="bg-accent px-1.5 py-0.5 font-mono text-[10px] font-medium uppercase tracking-[0.12em] text-white">Smith</span>
-          <span className="font-mono text-[9.5px] text-faint">any key to skip</span>
+          <span className="whitespace-nowrap font-mono text-[9.5px] text-faint">any key to skip</span>
         </span>
         {text && (
           <motion.span
