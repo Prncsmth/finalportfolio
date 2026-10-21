@@ -51,7 +51,7 @@ export function Contact() {
 
       <Reveal delay={0.2}>
         <p className="mt-8 max-w-xl text-[15px] leading-relaxed text-muted">
-          Hiring for an internship or junior role, or have a project in mind? My inbox is open, and I&apos;d love to hear from you.
+          Hiring an intern or have a project in mind? Let&apos;s talk.
         </p>
       </Reveal>
 

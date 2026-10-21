@@ -12,7 +12,7 @@ export function Stack() {
         label="Stack"
         id="stack-title"
         title={['One stack,', { text: 'web to mobile', className: headingAccent }]}
-        aside={<p className="max-w-xs text-[13px] leading-relaxed text-muted">The tools I reach for, grouped by where they sit in the app.</p>}
+        aside={<p className="max-w-xs text-[13px] leading-relaxed text-muted">What I use, from screen to server.</p>}
       />
 
       <div className="grid border-l border-t border-line sm:grid-cols-2 lg:grid-cols-5">

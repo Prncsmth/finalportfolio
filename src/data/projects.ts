@@ -28,8 +28,8 @@ export const projects: Project[] = [
     kind: 'Capstone project',
     year: '2026',
     summary:
-      'An Android app and web platform for emergency coordination in Cordova, Cebu. Citizens send an SOS with their location and report incidents, responders get live routes and are tracked in real time, and administrators run everything from a live-map dashboard.',
-    note: 'Academic capstone project, not an officially adopted LGU system.',
+      'Emergency coordination for Cordova, Cebu: citizens send an SOS, responders are tracked live, and admins manage it all on a map.',
+    note: 'Academic project, not an adopted LGU system.',
     stack: ['TypeScript', 'React Native', 'Expo', 'Next.js', 'Express', 'PostgreSQL', 'Prisma', 'Socket.IO', 'Mapbox'],
     live: { label: 'cordovariskq.org', href: 'https://www.cordovariskq.org' },
     moreLive: [{ label: 'Admin dashboard', href: 'https://admin.cordovariskq.org' }],
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     kind: 'Team project',
     year: '2026',
     summary:
-      'An AI study companion. Students upload a lesson to get clear explanations and key concepts, generate quizzes with adjustable difficulty, and ask an AI tutor follow-up questions.',
+      'AI study companion that explains lessons, generates quizzes, and answers questions as a tutor.',
     stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Express', 'Prisma', 'PostgreSQL', 'Gemini API'],
     live: { label: 'skolarly-frontend.vercel.app', href: 'https://skolarly-frontend.vercel.app' },
     source: [
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     kind: 'Booking platform',
     year: 'Oct 2026',
     summary:
-      'Court booking for an outdoor pickleball venue in Cordova, Cebu. Players pick a slot on the Left or Right court, pay by cash or GCash, and track their booking, while the owner and staff confirm requests from a console that shares the same live schedule.',
+      'Pickleball court booking with cash or GCash payments and a live staff console.',
     stack: ['Next.js', 'React', 'Tailwind CSS', 'Node.js', 'Express', 'PostgreSQL', 'Neon'],
     live: { label: 'kramzzpickle.vercel.app', href: 'https://kramzzpickle.vercel.app' },
     moreLive: [{ label: 'Staff console', href: 'https://kramzpickle.vercel.app' }],

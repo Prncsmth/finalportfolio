@@ -22,17 +22,16 @@ export const experience: ExperienceItem[] = [
     title: 'Web & Mobile Developer',
     org: 'CORDOVA RISKQ · Capstone project',
     summary:
-      'Built an emergency coordination platform end to end: an Android app for citizens and responders, a real-time API, an admin dashboard, and a public download site.',
+      'Android app, real-time API, admin dashboard, and download site, built end to end.',
     contributions: [
       {
         area: 'Mobile app',
         stack: 'React Native · Expo',
         commits: 110,
         points: [
-          'Live GPS tracking and routing for responders',
-          'Slide-to-resolve, alarms and photo reports',
-          'SOS failure handling with emergency-call fallback',
-          'Step-by-step auth, Google onboarding, privacy consent',
+          'Live GPS tracking and routing',
+          'SOS with emergency-call fallback',
+          'Photo reports and alarms',
         ],
       },
       {
@@ -40,10 +39,9 @@ export const experience: ExperienceItem[] = [
         stack: 'Express · Prisma · PostgreSQL',
         commits: 54,
         points: [
-          'Email OTP sign-up and 6-digit password reset',
-          'Barangay-scoped alerts, auto-escalation after 2 minutes',
-          'Cloudinary uploads, push notifications, rate limiting',
-          'Real-time audit log over Socket.IO',
+          'Email OTP and password reset',
+          'Auto-escalation after 2 minutes',
+          'Real-time audit log',
         ],
       },
       {
@@ -51,10 +49,9 @@ export const experience: ExperienceItem[] = [
         stack: 'Next.js · Socket.IO',
         commits: 40,
         points: [
-          'Live map linked to incidents and nearby responders',
-          'Assign responders by barangay',
-          'Notifications inbox and announcement severity',
-          'Security headers and a content security policy',
+          'Live incident map',
+          'Responder assignment by barangay',
+          'Notifications inbox',
         ],
       },
       {
@@ -62,7 +59,7 @@ export const experience: ExperienceItem[] = [
         stack: 'Next.js · Tailwind CSS',
         commits: 17,
         solo: true,
-        points: ['Designed and built on my own', 'Scroll animations and video walkthroughs', 'APK download with QR, coverage map, reviews'],
+        points: ['Designed and built solo', 'APK download with QR code', 'Video walkthroughs'],
       },
     ],
   },
@@ -71,27 +68,27 @@ export const experience: ExperienceItem[] = [
     title: 'Enterprise Network Troubleshooting',
     org: 'Cordova Public College',
     summary:
-      'Diagnosed and repaired configuration errors in a simulated enterprise network, configuring network devices and access, then verified IP and DNS connectivity between hosts.',
+      'Fixed configuration errors in a simulated enterprise network and verified IP and DNS connectivity.',
     tags: ['Cisco Packet Tracer', 'Networking', 'DNS'],
   },
   {
     period: '2026',
     title: 'Team Project Contributor',
     org: 'Skolarly · AI study companion',
-    summary: 'Contributed to the Next.js frontend and the Express + Prisma backend of an AI-powered study app.',
+    summary: 'Frontend and backend work on an AI study app.',
     tags: ['Next.js', 'Express', 'Prisma', 'Gemini API'],
   },
   {
     period: '2025 – Present',
     title: 'Web Developer',
     org: 'Freelance',
-    summary: 'Designing and building websites and web apps independently.',
+    summary: 'Websites and web apps, built independently.',
   },
   {
     period: '2023 – 2024',
     title: 'Student Web Projects',
     org: 'Cordova Public College',
-    summary: 'Reusable React components, an e-commerce app on the DummyJSON API, and profile page designs from Figma.',
+    summary: 'React components, an e-commerce app, and Figma designs.',
     tags: ['React', 'JavaScript', 'Figma'],
   },
   {

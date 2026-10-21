@@ -161,7 +161,7 @@ export function Work() {
         title={['Projects built to be', { text: 'used,', className: headingAccent }, 'not just shown']}
         aside={
           <p className="max-w-xs text-[13px] leading-relaxed text-muted">
-            Web and mobile apps I&apos;ve designed, built, and shipped, from a capstone emergency system to a court booking platform.
+            Web and mobile apps I&apos;ve designed, built, and shipped.
           </p>
         }
       />

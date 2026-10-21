@@ -32,27 +32,13 @@ export function About() {
       <div className="grid gap-12 md:grid-cols-12 md:gap-10">
         <Reveal className="space-y-5 text-[15px] leading-[1.75] text-muted md:col-span-7 md:text-base">
           <p className="text-ink">
-            I&apos;m Smith Degamo, a fourth-year Bachelor of Science in Information Technology student with a strong interest in software
-            and application development.
+            I&apos;m Smith Degamo, a fourth-year BSIT student who loves turning ideas into working apps.
           </p>
           <p>
-            Throughout my academic journey, I&apos;ve worked on projects that have allowed me to turn ideas into functional applications and
-            explore how technology can solve real-world problems. One of my major academic experiences is developing CORDOVA RISKQ, a
-            geolocation-based emergency and assistance coordination system.
+            My biggest project so far is CORDOVA RISKQ, a geolocation-based emergency and assistance coordination system. It taught me
+            problem-solving, attention to detail, and how to learn fast.
           </p>
-          <p>
-            These experiences have helped me develop my problem-solving skills, attention to detail, and ability to learn through
-            challenges. I enjoy exploring new ideas, improving my work, and understanding how things function beyond the surface.
-          </p>
-          <p>
-            As I prepare to enter the professional world, I&apos;m currently looking for an internship where I can gain practical industry
-            experience, learn from experienced developers, contribute to meaningful projects, and prepare myself for a career in
-            technology.
-          </p>
-          <p>
-            I&apos;m still growing, and I&apos;m excited about the opportunities ahead. I&apos;m ready to learn, willing to take on challenges,
-            and committed to making the most of every experience.
-          </p>
+          <p>Now I&apos;m looking for an internship to learn from experienced developers and contribute to real projects.</p>
         </Reveal>
 
         <Reveal delay={0.1} className="md:col-span-4 md:col-start-9">

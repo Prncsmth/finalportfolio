@@ -53,10 +53,8 @@ export function Hero() {
           </motion.p>
 
           <motion.p {...rise(0.55)} className="mt-6 max-w-xl text-[14px] leading-[1.75] text-muted md:text-[15px]">
-            I&apos;m a fourth-year BSIT student from Cebu, Philippines, currently seeking an internship opportunity where I can apply my
-            knowledge, gain real-world experience, and grow as a developer. I&apos;m passionate about building meaningful digital solutions,
-            solving problems, and continuously learning through hands-on experience. I&apos;m eager to contribute, collaborate with a team, and
-            take on challenges that will help me grow both personally and professionally.
+            Fourth-year BSIT student from Cebu, Philippines, looking for an internship where I can learn from a team and build things
+            people use.
           </motion.p>
 
           <motion.div {...rise(0.65)} className="mt-10 flex flex-wrap items-center gap-3">
