@@ -43,10 +43,7 @@ export function Sidebar() {
           height={36}
           className="size-9 border border-line object-cover transition-transform duration-500 ease-out-expo group-hover:scale-105"
         />
-        <span className="leading-tight">
-          <span className="block font-mono text-[13px] font-medium">Smith Degamo</span>
-          <span className="block font-mono text-[10.5px] text-faint">web & mobile dev</span>
-        </span>
+        <span className="font-mono text-[13px] font-medium">Smith Degamo</span>
       </a>
 
       <nav aria-label="Primary" data-guide="nav" className="mt-12">
